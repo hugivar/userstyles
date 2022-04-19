@@ -6,12 +6,79 @@
 @author       nezhivar
 @license      No License
 ==/UserStyle== */
+
+/* Import Font */
+/* cyrillic-ext */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvmojLeTY.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5Vvk4jLeTY.woff2)
+    format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5Vvm4jLeTY.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvlIjLeTY.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvmIjLeTY.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvmYjLeTY.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5Vvl4jL.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
 @-moz-document domain("app.clickup.com") {
   /** Settings Colors */
   :root {
-    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", roboto,
-      "Helvetica Neue", helvetica, arial, sans-serif !important;
-    --editor-font-family: "Gotham Pro Regular" !important;
     --discord-background-primary: #36393f;
     --discord-background-secondary: #2f3136;
     --discord-background-modifier-hover: rgba(79, 84, 92, 0.16);
@@ -25,12 +92,15 @@
   }
 
   body {
-    --font: "Gotham Pro", sans-serif !important;
-    --editor-font-family: "Gotham Pro Regular" !important;
-    --editor-font-size: 16px;
+    --font: "Gotham Pro" !important;
+    --editor-font-family: "Fira Sans", "Gotham Pro" !important;
     --theme-main-color: #5865f2 !important;
     --theme-main-color-dark: #5865f2 !important;
     --theme-main-color-light: #ffffff !important;
+  }
+  .cu-dashboard-doc-main {
+    --font: "Gotham Pro" !important;
+    --editor-font-family: "Fira Sans", "Gotham Pro" !important;
   }
 
   /** Task */
@@ -151,6 +221,14 @@
     transition: background-color 0.17s ease, color 0.17s ease;
   }
 
+  .dark-theme .cu2-project-list-bar__new-toggle:hover,
+  .dark-theme
+    .cu2-project-list-bar__new.cu-dropdown_open
+    .cu2-project-list-bar__new-toggle {
+    background-color: var(--discord-blurple-560);
+    transition: background-color 0.17s ease, color 0.17s ease;
+  }
+
   .dark-theme .task-minimize {
     background-color: var(--discord-blurple);
     transition: background-color 0.17s ease, color 0.17s ease;
@@ -162,6 +240,15 @@
 
   .dark-theme .task-minimize:hover {
     fill: #aaa;
+    background-color: var(--discord-blurple-560);
+    transition: background-color 0.17s ease, color 0.17s ease;
+  }
+
+  .dark-theme
+    .cu2-views-bar_v6
+    .cu2-views-bar__btn_outline:is(.cu2-views-bar_v6
+      .cu2-views-bar__btn_outline:hover, .cu2-views-bar_v6
+      .cu2-views-bar__btn_outline:focus) {
     background-color: var(--discord-blurple-560);
     transition: background-color 0.17s ease, color 0.17s ease;
   }
@@ -226,6 +313,22 @@
     );
   }
 
+  .dark-theme
+    .cu2-views-bar_v6
+    .cu-data-view-item_tab:hover
+    .cu-data-view-item__name_not-empty:after,
+  .dark-theme
+    .cu2-views-bar_v6
+    .cu-data-view-item_tab.cu-data-view-item_selected
+    .cu-data-view-item__name_not-empty:after {
+    background: linear-gradient(
+      to right,
+      rgba(43, 52, 59, 0) 0%,
+      var(--discord-background-primary) 70%,
+      var(--discord-background-primary) 100%
+    );
+  }
+
   .dark-theme .cu-data-view-list__edge_right:before {
     background: linear-gradient(
       to right,
@@ -249,7 +352,7 @@
   }
 
   /**
- * Automations
+* Automations
 */
   .dark-theme .cu-automation-tab-manage__container {
     background: var(--discord-background-secondary);
@@ -376,5 +479,8 @@
     left: 72px;
     right: 72px;
     width: auto;
+  }
+  .cu-dashboard-doc-page_modal {
+    width: unset !important;
   }
 }
