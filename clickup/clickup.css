@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name         ClickUp Theme
+@name         ClickUp - Discord Dark Theme
 @version      2.118
 @namespace    userstyles.world/user/chew
 @description  Leverage UserStyle of Clickup with Discord theme plus some additional enhancements
@@ -10,477 +10,442 @@
 /* Import Font */
 /* cyrillic-ext */
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvmojLeTY.woff2)
-    format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
-    U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvmojLeTY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5Vvk4jLeTY.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5Vvk4jLeTY.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5Vvm4jLeTY.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5Vvm4jLeTY.woff2) format('woff2');
   unicode-range: U+1F00-1FFF;
 }
 /* greek */
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvlIjLeTY.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvlIjLeTY.woff2) format('woff2');
   unicode-range: U+0370-03FF;
 }
 /* vietnamese */
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvmIjLeTY.woff2)
-    format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvmIjLeTY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvmYjLeTY.woff2)
-    format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5VvmYjLeTY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5Vvl4jL.woff2)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5Vvl4jL.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @-moz-document domain("app.clickup.com") {
-  /** Settings Colors */
-  :root {
-    --discord-background-primary: #36393f;
-    --discord-background-secondary: #2f3136;
-    --discord-background-modifier-hover: rgba(79, 84, 92, 0.16);
-    --discord-background-tertiary: #202225;
-    --discord-blurple: #5865f2;
-    --discord-blurple-560: hsl(
-      235,
-      calc(var(--saturation-factor, 1) * 51.4%),
-      52.4%
-    );
-  }
+    /** Settings Colors */
+    :root {
+        --discord-background-primary: #36393f;
+        --discord-background-secondary: #2f3136;
+        --discord-background-modifier-hover: rgba(79, 84, 92, 0.16);
+        --discord-background-tertiary: #202225;
+        --discord-blurple: #5865F2;
+        --discord-blurple-560: hsl(235, calc(var(--saturation-factor, 1)*51.4%), 52.4%);
+    }
 
-  body {
-    --font: "Gotham Pro" !important;
-    --editor-font-family: "Fira Sans", "Gotham Pro" !important;
-    --theme-main-color: #5865f2 !important;
-    --theme-main-color-dark: #5865f2 !important;
-    --theme-main-color-light: #ffffff !important;
-  }
-  .cu-dashboard-doc-main {
-    --font: "Gotham Pro" !important;
-    --editor-font-family: "Fira Sans", "Gotham Pro" !important;
-  }
+    body {
+        --font: "Gotham Pro" !important;
+        --editor-font-family: "Fira Sans", "Gotham Pro" !important;
+        --theme-main-color: #5865F2!important;
+        --theme-main-color-dark: #5865F2!important;
+        --theme-main-color-light: #FFFFFF!important;
+    }
+    .cu-dashboard-doc-main {
+        --font: "Gotham Pro" !important;
+        --editor-font-family: "Fira Sans", "Gotham Pro" !important;
+    }
+    .cu-dashboard-doc-container__main {
+        margin-left: -16%;
+    }
+    /** Task */
+    .dark-theme .task-column.task-column_main {
+        background: var(--discord-background-primary);
+    }
 
-  /** Task */
-  .dark-theme .task-column.task-column_main {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-editor-wrapper .cu-editor {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-editor-wrapper .cu-editor {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .task-name-block {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .task-name-block {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .task-name-block .task-name {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .task-name-block .task-name {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .task-column.task-column_activity {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .task-column.task-column_activity {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .task__header {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .task__header {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .task-container__header-wrapper {
+        background-color: var(--discord-background-secondary);
+    }
 
-  .dark-theme .task-container__header-wrapper {
-    background-color: var(--discord-background-secondary);
-  }
+    .dark-theme .comment-bar {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .comment-bar {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .comment-bar__editor .ql-editor {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .comment-bar__editor .ql-editor {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .task__toolbar_last:before {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .task__toolbar_last:before {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .attachment-tile__inner {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .attachment-tile__inner {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-task-row-new__container {
+        background: var(--discord-background-secondary);
+        border: 1px solid var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-task-row-new__container {
-    background: var(--discord-background-secondary);
-    border: 1px solid var(--discord-background-secondary);
-  }
+    .dark-theme .cu-dashboard-table__scroll {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-dashboard-table__scroll {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-simple-bar__container {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-simple-bar__container {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-simple-bar__body {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-simple-bar__body {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu2-views-bar__container {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu2-views-bar__container {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu2-views-bar_v6 .cu2-views-bar__options {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu2-views-bar_v6 .cu2-views-bar__options {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-task-list-header__item_main {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-task-list-header__item_main {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-task-row__container {
+        background: var(--discord-background-secondary);
+        border-color: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-task-row__container {
-    background: var(--discord-background-secondary);
-    border-color: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-task-row__main {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-task-row__main {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-simple-bar__item:hover {
+        background: var(--discord-background-modifier-hover);
+    }
 
-  .dark-theme .cu-simple-bar__item:hover {
-    background: var(--discord-background-modifier-hover);
-  }
+    .dark-theme .cu2-search_simple-layout {
+        background: var(--discord-background-tertiary);
+    }
 
-  .dark-theme .cu2-search_simple-layout {
-    background: var(--discord-background-tertiary);
-  }
+    .dark-theme .cu-header-quick-switcher_simple-layout {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-header-quick-switcher_simple-layout {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu2-project-list-bar__title {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu2-project-list-bar__title {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu2-project-list-bar__title:hover {
+        background: var(--discord-background-modifier-hover);
+    }
 
-  .dark-theme .cu2-project-list-bar__title:hover {
-    background: var(--discord-background-modifier-hover);
-  }
+    .dark-theme .cu2-project-list-bar__scrollable {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu2-project-list-bar__scrollable {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu2-project-list-bar-item__container {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu2-project-list-bar-item__container {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu2-project-list-bar__new-toggle,
+    .cu-simple-bar.dark-theme .cu2-project-list-bar__new-toggle {
+        color: #fff;
+        background-color: var(--discord-blurple);
+        transition: background-color .17s ease, color .17s ease;
+    }
 
-  .dark-theme .cu2-project-list-bar__new-toggle,
-  .cu-simple-bar.dark-theme .cu2-project-list-bar__new-toggle {
-    color: #fff;
-    background-color: var(--discord-blurple);
-    transition: background-color 0.17s ease, color 0.17s ease;
-  }
+    .dark-theme .cu2-project-list-bar__new-toggle:hover,
+    .dark-theme .cu2-project-list-bar__new.cu-dropdown_open .cu2-project-list-bar__new-toggle {
+        background-color: var(--discord-blurple-560);
+        transition: background-color .17s ease, color .17s ease;
+    }
 
-  .dark-theme .cu2-project-list-bar__new-toggle:hover,
-  .dark-theme
-    .cu2-project-list-bar__new.cu-dropdown_open
-    .cu2-project-list-bar__new-toggle {
-    background-color: var(--discord-blurple-560);
-    transition: background-color 0.17s ease, color 0.17s ease;
-  }
+    .dark-theme .task-minimize {
+        background-color: var(--discord-blurple);
+        transition: background-color .17s ease, color .17s ease;
+    }
 
-  .dark-theme .task-minimize {
-    background-color: var(--discord-blurple);
-    transition: background-color 0.17s ease, color 0.17s ease;
-  }
+    .dark-theme .task-minimize > svg {
+        fill: #fff;
+    }
 
-  .dark-theme .task-minimize > svg {
-    fill: #fff;
-  }
+    .dark-theme .task-minimize:hover {
+        fill: #aaa;
+        background-color: var(--discord-blurple-560);
+        transition: background-color .17s ease, color .17s ease;
+    }
 
-  .dark-theme .task-minimize:hover {
-    fill: #aaa;
-    background-color: var(--discord-blurple-560);
-    transition: background-color 0.17s ease, color 0.17s ease;
-  }
+    .dark-theme .cu2-views-bar_v6 .cu2-views-bar__btn_outline:is(.cu2-views-bar_v6 .cu2-views-bar__btn_outline:hover, .cu2-views-bar_v6 .cu2-views-bar__btn_outline:focus) {
+        background-color: var(--discord-blurple-560);
+        transition: background-color .17s ease, color .17s ease;
+    }
 
-  .dark-theme
-    .cu2-views-bar_v6
-    .cu2-views-bar__btn_outline:is(.cu2-views-bar_v6
-      .cu2-views-bar__btn_outline:hover, .cu2-views-bar_v6
-      .cu2-views-bar__btn_outline:focus) {
-    background-color: var(--discord-blurple-560);
-    transition: background-color 0.17s ease, color 0.17s ease;
-  }
+    .dark-theme .cu2-views-bar_v6 .cu2-views-bar__btn_outline {
+        color: #fff;
+        background-color: var(--discord-blurple);
+        transition: background-color .17s ease, color .17s ease;
+    }
 
-  .dark-theme .cu2-views-bar_v6 .cu2-views-bar__btn_outline {
-    color: #fff;
-    background-color: var(--discord-blurple);
-    transition: background-color 0.17s ease, color 0.17s ease;
-  }
+    .dark-theme .cu2-views-bar_v6 .cu2-views-bar__share-label {
+        color: #fff;
+    }
 
-  .dark-theme .cu2-views-bar_v6 .cu2-views-bar__share-label {
-    color: #fff;
-  }
+    .dark-theme .cu2-views-bar_v6 .cu2-views-bar__share-icon {
+        fill: #fff;
+        stroke: #fff;
+    }
 
-  .dark-theme .cu2-views-bar_v6 .cu2-views-bar__share-icon {
-    fill: #fff;
-    stroke: #fff;
-  }
+    .cu2-project-list-bar__new-icon {
+        fill: #fff;
+    }
 
-  .cu2-project-list-bar__new-icon {
-    fill: #fff;
-  }
+    .dark-theme .cu-simple-bar__row {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-simple-bar__row {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-simple-bar__row .cu-accordion__toggle_expanded {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-simple-bar__row .cu-accordion__toggle_expanded {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-grid-sidebar__body {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-grid-sidebar__body {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-simple-bar__body .cu-sidebar-favorites__header_active {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-simple-bar__body .cu-sidebar-favorites__header_active {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-sidebar-favorites__list {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-sidebar-favorites__list {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-simple-bar__divider-placeholder {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-simple-bar__divider-placeholder {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-task-list-header {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-task-list-header {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-data-view-item {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-data-view-item {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-data-view-item__name_not-empty:after {
+        background: linear-gradient(to right, rgba(43, 52, 59, 0) 0%, var(--discord-background-primary) 70%, var(--discord-background-primary) 100%);
+    }
 
-  .dark-theme .cu-data-view-item__name_not-empty:after {
-    background: linear-gradient(
-      to right,
-      rgba(43, 52, 59, 0) 0%,
-      var(--discord-background-primary) 70%,
-      var(--discord-background-primary) 100%
-    );
-  }
+    .dark-theme .cu2-views-bar_v6 .cu-data-view-item_tab:hover .cu-data-view-item__name_not-empty:after,
+    .dark-theme .cu2-views-bar_v6 .cu-data-view-item_tab.cu-data-view-item_selected .cu-data-view-item__name_not-empty:after {
+        background: linear-gradient(to right, rgba(43, 52, 59, 0) 0%, var(--discord-background-primary) 70%, var(--discord-background-primary) 100%);
+    }
 
-  .dark-theme
-    .cu2-views-bar_v6
-    .cu-data-view-item_tab:hover
-    .cu-data-view-item__name_not-empty:after,
-  .dark-theme
-    .cu2-views-bar_v6
-    .cu-data-view-item_tab.cu-data-view-item_selected
-    .cu-data-view-item__name_not-empty:after {
-    background: linear-gradient(
-      to right,
-      rgba(43, 52, 59, 0) 0%,
-      var(--discord-background-primary) 70%,
-      var(--discord-background-primary) 100%
-    );
-  }
+    .dark-theme .cu-data-view-list__edge_right:before {
+        background: linear-gradient(to right, rgba(43, 52, 59, 0) 0%, var(--discord-background-primary) 30%, var(--discord-background-primary) 100%);
+    }
 
-  .dark-theme .cu-data-view-list__edge_right:before {
-    background: linear-gradient(
-      to right,
-      rgba(43, 52, 59, 0) 0%,
-      var(--discord-background-primary) 30%,
-      var(--discord-background-primary) 100%
-    );
-  }
+    .dark-theme .cu-dashboard-doc-container__main {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-dashboard-doc-container__main {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-dashboard-doc-container__scroll-container {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-dashboard-doc-container__scroll-container {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-dashboard-doc-title__text,
+    .dark-theme .cu-dashboard-doc-title .cu-editable__input {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-dashboard-doc-title__text,
-  .dark-theme .cu-dashboard-doc-title .cu-editable__input {
-    background: var(--discord-background-primary);
-  }
-
-  /**
-* Automations
+    /**
+ * Automations
 */
-  .dark-theme .cu-automation-tab-manage__container {
-    background: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-automation-tab-manage__container {
+        background: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-automation-tab-manage__item {
-    background-color: var(--discord-background-primary);
-  }
+    .dark-theme .cu-automation-tab-manage__item {
+        background-color: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-automation-list__header {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-automation-list__header {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-automation-modal__container {
-    background-color: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-automation-modal__container {
+        background-color: var(--discord-background-secondary);
+    }
 
-  /** Home */
-  .dark-theme .cu-home-header {
-    background: var(--discord-background-primary);
-  }
+    /** Home */
+    .dark-theme .cu-home-header {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-home-page__body {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-home-page__body {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-home-page__section-column_tasks {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-home-page__section-column_tasks {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-home-page__section-column_calendar {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-home-page__section-column_calendar {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-lineup_v2 .cu-lineup__add-items-toggle {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-lineup_v2 .cu-lineup__add-items-toggle {
+        background: var(--discord-background-primary);
+    }
 
-  .cu-home-header__btn {
-    color: #fff;
-    fill: #fff;
-    background-color: var(--discord-blurple);
-    transition: background-color 0.17s ease, color 0.17s ease;
-  }
+    .cu-home-header__btn {
+        color: #fff;
+        fill: #fff;
+        background-color: var(--discord-blurple);
+        transition: background-color .17s ease, color .17s ease;
+    }
 
-  .dark-theme .cu-home-header__btn:hover {
-    fill: #aaa;
-    background-color: var(--discord-blurple-560);
-    transition: background-color 0.17s ease, color 0.17s ease;
-  }
+    .dark-theme .cu-home-header__btn:hover {
+        fill: #aaa;
+        background-color: var(--discord-blurple-560);
+        transition: background-color .17s ease, color .17s ease;
+    }
 
-  .cu-home-header__btn_active .cu-home-header__btn-icon {
-    fill: #fff;
-  }
+    .cu-home-header__btn_active .cu-home-header__btn-icon {
+        fill: #fff;
+    }
 
-  .cu-home-header__btn_active .cu-home-header__btn-label {
-    color: #fff;
-  }
+    .cu-home-header__btn_active .cu-home-header__btn-label {
+        color: #fff;
+    }
 
-  .dark-theme .cu-home-tagged-comments__header {
-    background-color: var(--discord-background-tertiary);
-  }
+    .dark-theme .cu-home-tagged-comments__header {
+        background-color: var(--discord-background-tertiary);
+    }
 
-  .dark-theme .cu-home-tagged-comments__body {
-    background-color: var(--discord-background-secondary);
-  }
+    .dark-theme .cu-home-tagged-comments__body {
+        background-color: var(--discord-background-secondary);
+    }
 
-  .dark-theme .cu-home-tabs {
-    background: var(--discord-background-primary);
-  }
+    .dark-theme .cu-home-tabs {
+        background: var(--discord-background-primary);
+    }
 
-  /** Notifications */
-  .dark-theme .cu-notifications {
-    background: var(--discord-background-primary);
-  }
+    /** Notifications */
+    .dark-theme .cu-notifications {
+        background: var(--discord-background-primary);
+    }
 
-  .dark-theme .cu-notifications__header_v6 {
-    background: var(--discord-background-primary);
-  }
-  .cu-dashboard-board__column {
-    width: 330px;
-  }
-  .cu-panel-board__clickable-name {
-    font-size: 15px;
-  }
+    .dark-theme .cu-notifications__header_v6 {
+        background: var(--discord-background-primary);
+    }
+    .cu-dashboard-board__column {
+        width: 330px;
+    }
+    .cu-panel-board__clickable-name {
+        font-size: 15px;
+    }
 
-  .cu-tags-select__badge.list-view .cu-tags-select__name {
-    font-size: 11px;
-  }
-  .cu-tags-select__badge.list-view .cu-tags-select__name-shadow {
-    font-size: 11px;
-  }
 
-  .cu2-nav-favorites-item__item-name-label {
-    font-size: 13px;
-  }
+    .cu-tags-select__badge.list-view .cu-tags-select__name {
+        font-size: 11px;
+    }
+    .cu-tags-select__badge.list-view .cu-tags-select__name-shadow {
+        font-size: 11px;
+    }
 
-  .cu-nav-favorites-bar {
-    height: 56px;
-  }
+    .cu2-nav-favorites-item__item-name-label {
+        font-size: 13px;
+    }
 
-  .cu-nav-favorites-bar::before {
-    height: 100%;
-  }
+    .cu-nav-favorites-bar {
+        height: 56px;
+    }
 
-  .cu-task-row-main__link-text-inner {
-    font-size: 15px;
-  }
+    .cu-nav-favorites-bar::before {
+        height: 100%;
+    }
 
-  .dark-theme .cu-task-row__container {
-    padding: 4px 0px;
-  }
-  .cu-subtasks-by-status-popup__block {
-    color: #4e5bf2;
-  }
-  .cu-task-row__container {
-    padding: 6px 0;
-  }
-  .cu-modal.cu-modal_md .cu-modal__dialog {
-    width: calc(100vw - 280px);
-  }
-  .task-container {
-    max-width: none;
-    left: 72px;
-    right: 72px;
-    width: auto;
-  }
-  .cu-dashboard-doc-page_modal {
-    width: unset !important;
-  }
+    .cu-task-row-main__link-text-inner {
+        font-size: 15px;
+    }
+
+    .dark-theme .cu-task-row__container {
+        padding: 4px 0px;
+    }
+    .cu-subtasks-by-status-popup__block {
+        color: #4e5bf2;
+    }
+    .cu-task-row__container {
+        padding: 6px 0;
+    }
+    .cu-modal.cu-modal_md .cu-modal__dialog {
+        width: calc(100vw - 280px);
+    }
+    .task-container {
+        max-width: none;
+        left: 72px;
+        right: 72px;
+        width: auto;
+    }
+    .cu-dashboard-doc-page_modal {
+        width: unset !important;
+    }
+    .cu-doc-sticky-toc__content.cu-table-content {
+        padding-left: 10px;
+        background-color: var(--discord-background-primary) !important;
+    }
 }
