@@ -1,0 +1,41 @@
+.GitHubCalendar .px-md-5 {
+    display: none
+}
+
+.Slot.bottomCentre {
+    bottom: 0rem;
+}
+
+.location {
+    text-align: left;
+    color: white;
+}
+
+.Digital {
+    display: none;
+}
+
+
+hr {
+    display: none;
+}
+
+.controls {
+    display: none;
+}
+
+.photo {
+    display: none
+}
+
+.Overlay:hover {
+    opacity: 1.0;
+}
+
+.Links a {
+    text-decoration: none;
+}
+
+.Links a:hover {
+    color: lightgreen;
+}
