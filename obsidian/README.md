@@ -8,7 +8,7 @@ https://github.com/kognise/obsidian-atom
 
 ## Usage
 
-Currently, I have this userstyle obsidian.css symlinked into of my Obsidian apps themes folder
+Currently, I have this userstyle obsidian.css symlinked into of my Obsidian apps themes folder as this is still a work in progress.
 
 ```sh
 /Users/nezhivar/repos/obsidian-core/.obsidian/themes
