@@ -88,8 +88,136 @@
     --orange: #986800;
 }
 
+:root {
+    /*----------------------------------------------------------------
+    COLORS
+    ----------------------------------------------------------------*/
+
+    --base-h: 212;
+    /* Base hue */
+    --base-s: 15%;
+    /* Base saturation */
+    --base-d: 13%;
+    /* Base lightness Dark Mode  - 0 is black */
+    --base-l: 97%;
+    /* Base lightness Light Mode  - 100 is white */
+    --accent-h: 215;
+    /* Accent hue */
+    --accent-s: 75%;
+    /* Accent saturation */
+    --accent-d: 70%;
+    /* Accent lightness Dark Mode */
+    --accent-l: 60%;
+    /* Accent lightness Light Mode */
+
+    --blue: #2e80f2;
+    --pink: #ff82b2;
+    --green: #3eb4bf;
+    --yellow: #e5b567;
+    --orange: #e87d3e;
+    --red: #e83e3e;
+    --purple: #9e86c8;
+
+    --light-yellow-highlighter: #fff3a3a6;
+    --dark-yellow-highlighter: #dbce7e77;
+    --pink-highlighter: #ffb8eba6;
+    --red-highlighter: #db3e606e;
+    --blue-highlighter: #adccffa6;
+    --dark-blue-highlighter: #adccff5b;
+    --green-highlighter: #bbfabba6;
+    --purple-highlighter: #d2b3ffa6;
+    --orange-highlighter: #ffb86ca6;
+    --grey-highlighter: #cacfd9a6;
+
+    /*----------------------------------------------------------------
+    FONTS
+    ----------------------------------------------------------------*/
+
+    /* Preview mode */
+
+    --text: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+        Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+    /* Editor mode */
+
+    --text-editor: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+    /* Code */
+
+    --font-monospace: 'JetBrains Mono', SFMono-Regular, Consolas, 'Roboto Mono',
+        monospace;
+
+    /* UI */
+
+    --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+        Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+    /* Colors, sizes, weights, padding */
+
+    --h1-color: var(--text-normal);
+    --h2-color: var(--blue);
+    --h3-color: var(--blue);
+    --h4-color: var(--yellow);
+    --h5-color: var(--red);
+    --h6-color: var(--text-muted);
+
+    --strong-color: var(--pink);
+    --em-color: var(--pink);
+
+    --font-normal: 16px;
+    --font-small: 13px;
+    --font-smaller: 11px;
+    --font-smallest: 10px;
+    --editor-font-size: 1rem;
+
+    --font-settings: 15px;
+    --font-settings-small: 13px;
+    --font-inputs: 14px;
+
+    --h1: 1.5em;
+    --h2: 1.3em;
+    --h3: 1.1em;
+    --h4: 0.9em;
+    --h5: 0.85em;
+    --h6: 0.85em;
+
+    --h1-weight: 700;
+    --h2-weight: 700;
+    --h3-weight: 600;
+    --h4-weight: 500;
+    --h5-weight: 500;
+    --h6-weight: 400;
+
+    --normal-weight: 400;
+    /* Switch to 300 if you want thinner default text */
+    --bold-weight: 700;
+    /* Switch to 700 if you want thicker bold text */
+    --icon-muted: 0.4;
+    --line-width: 45rem;
+    /* Maximum characters per line */
+    --line-height: 1.5;
+    --border-width: 1px;
+    --border-width-alt: 1px;
+    --max-width: 90%;
+    /* Amount of padding around the text, use 90% for narrower padding */
+    --nested-padding: 3.5%;
+    /* Amount of padding for quotes and transclusions */
+    --input-height: 36px;
+
+    --font-todoist-title-size: 1em;
+    --font-todoist-metadata-size: small;
+
+    --cursor: default;
+}
+
 body {
     -webkit-font-smoothing: auto;
+    /* --font-adaptive-normal: var(--font-normal);
+    --font-adaptive-small: var(--font-small);
+    --font-adaptive-smaller: var(--font-smaller);
+    --font-adaptive-smallest: var(--font-smallest);
+    --line-width-adaptive: var(--line-width); */
 }
 
 .titlebar {
@@ -195,7 +323,7 @@ a.tag:hover {
 
 .nav-file-title,
 .nav-folder-title {
-    width: 100%;
+    /* width: 100%; */
     cursor: default;
     display: flex;
     align-items: baseline;
@@ -224,7 +352,7 @@ body:not(.is-grabbing) .nav-folder .nav-folder-title:hover:not(.is-active) {
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-section,
 .markdown-source-view.is-readable-line-width .CodeMirror {
-    max-width: 900px !important;
+    max-width: 600px !important;
     line-height: 26px;
 }
 
@@ -295,6 +423,20 @@ strong,
 b,
 .view-header-title {
     font-weight: 600;
+}
+
+.cm-header .cm-header-1 {
+    border-bottom: 1px solid var(--gray-1);
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.HyperMD-header-1 {
+    border-bottom: 1px solid var(--gray-1);
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .workspace>.workspace-split>.workspace-leaf:first-of-type:last-of-type .view-header {
