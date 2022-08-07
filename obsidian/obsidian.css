@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=Karla:ital,wght@0,400;0,600;1,400;1,600&family=Rubik:ital,wght@0,400;0,600;1,400;1,600&display=swap");
-
 :root {
   --font-size-normal: 18px;
   --font-size-code: 15px;
@@ -14,9 +12,89 @@
   --font-size-h4: 20px;
   --font-size-h5: 19px;
   --font-size-h6: 18px;
-  --font-family-editor: IBM Plex Mono, Menlo, Monaco, Courier New, monospace;
-  --font-family-preview: Karla, Avenir Next, Helvetica, Arial, sans-serif;
-  --font-family-preview-heading: Rubik, Avenir Next, Helvetica, Arial, sans-serif;
+
+
+  /*----------------------------------------------------------------
+  FONTS
+  ----------------------------------------------------------------*/
+
+  /* Preview mode */
+
+  --text: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  /* Editor mode */
+
+  --text-editor: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  /* Code */
+
+  --font-monospace: 'JetBrains Mono', SFMono-Regular, Consolas, 'Roboto Mono',
+    monospace;
+
+  /* UI */
+
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  /* Colors, sizes, weights, padding */
+
+  --h1-color: var(--text-normal);
+  --h2-color: var(--blue);
+  --h3-color: var(--blue);
+  --h4-color: var(--yellow);
+  --h5-color: var(--red);
+  --h6-color: var(--text-muted);
+
+  --strong-color: var(--pink);
+  --em-color: var(--pink);
+
+  --font-normal: 16px;
+  --font-small: 13px;
+  --font-smaller: 11px;
+  --font-smallest: 10px;
+  --editor-font-size: 1rem;
+
+  --font-settings: 15px;
+  --font-settings-small: 13px;
+  --font-inputs: 14px;
+
+  --h1: 1.5em;
+  --h2: 1.3em;
+  --h3: 1.1em;
+  --h4: 0.9em;
+  --h5: 0.85em;
+  --h6: 0.85em;
+
+  --h1-weight: 700;
+  --h2-weight: 700;
+  --h3-weight: 600;
+  --h4-weight: 500;
+  --h5-weight: 500;
+  --h6-weight: 400;
+
+  --normal-weight: 400;
+  /* Switch to 300 if you want thinner default text */
+  --bold-weight: 700;
+  /* Switch to 700 if you want thicker bold text */
+  --icon-muted: 0.4;
+  --line-width: 45rem;
+  /* Maximum characters per line */
+  --line-height: 1.5;
+  --border-width: 1px;
+  --border-width-alt: 1px;
+  --max-width: 90%;
+  /* Amount of padding around the text, use 90% for narrower padding */
+  --nested-padding: 3.5%;
+  /* Amount of padding for quotes and transclusions */
+  --input-height: 36px;
+  --list-indent: 2em;
+
+  --font-todoist-title-size: 1em;
+  --font-todoist-metadata-size: small;
+
+  --cursor: default;
 
 }
 
@@ -49,6 +127,15 @@
   --code-block: var(--fg-light);
   --vim-cursor: #5a93a2;
   --text-selection: rgba(189, 174, 147, 0.5);
+
+  --fgrad1: rgba(185, 230, 231, 0.89);
+  --fgrad2: rgba(163, 227, 231, 0.808);
+  --fgrad3: rgba(154, 209, 231, 0.767);
+  --fgrad4: rgba(159, 203, 230, 0.822);
+  --fgrad5: rgba(176, 186, 230, 0.623);
+  --fgrad6: rgba(184, 200, 243, 0.705);
+  --fgrad7: rgba(183, 204, 243, 0.644);
+  --fgrad8: rgba(155, 227, 245, 0.753);
 }
 
 .theme-dark {
@@ -104,6 +191,16 @@
   --border-color: #2b2727;
   /*also like transparent*/
 }
+
+body,
+input,
+button,
+a,
+span,
+textarea {
+  font-family: var(--font-ui);
+}
+
 
 /*-------------------------------------*/
 /*      Search the following lines     */
@@ -246,7 +343,7 @@ a:not(.internal-link) {
 /**************************************/
 /* font for everything outside of editor/preview panes */
 .app-container {
-  font-family: var(--font-family-preview);
+  font-family: var(--font-ui) !important;
 }
 
 /* set the text selection color for preview mode */
@@ -515,16 +612,6 @@ thead {
 /***************************************/
 .modal.mod-settings button:not(.mod-cta):hover {
   background-color: var(--interactive-accent-hover);
-}
-
-/***************************************/
-/*            Hide side bar            */
-/***************************************/
-.workspace-ribbon:not(:hover) .workspace-ribbon-collapse-btn,
-.workspace-ribbon:not(:hover) .side-dock-actions,
-.workspace-ribbon:not(:hover) .side-dock-settings {
-  display: none;
-  transition: all 300ms ease-in-out;
 }
 
 .workspace-ribbon:not(:hover) {
