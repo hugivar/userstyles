@@ -13,8 +13,6 @@ Personally created and modified userstyles to be used with Stylus
 
 1. [Spotify](https://github.com/nezhivar/userstyles/tree/main/spotify)
 2. [ClickUp](https://github.com/nezhivar/userstyles/tree/main/clickup)
-3. [Feedly](https://github.com/nezhivar/userstyles/tree/main/feedly)
-4. [Gmail](https://github.com/nezhivar/userstyles/tree/main/gmail)
 
 ## How To Guides
 
